@@ -30,10 +30,15 @@ return require('packer').startup(function(use)
 	})
 	
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-	use ({
-		'junegunn/fzf',
-		run = function() vim.fn["fzf#install"]() end,
-	})
+	--use ({
+	--	'junegunn/fzf',
+	--	run = function() vim.fn["fzf#install"]() end,
+	--})
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		-- or                            , branch = '0.1.x',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 	use {
 		"windwp/nvim-autopairs",
 		config = function() require("nvim-autopairs").setup {} end
