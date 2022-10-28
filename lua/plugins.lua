@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	use 'junegunn/gv.vim'
 	use 'preservim/tagbar'
+	use 'DanilaMihailov/beacon.nvim'
 	use {
 		'nvim-tree/nvim-tree.lua',
 	  	requires = {
