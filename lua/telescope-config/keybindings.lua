@@ -1,3 +1,3 @@
-vim.keymap.set('n','<leader>fb',':Telescope file_browser<CR>', { noremap = true })
+vim.keymap.set('n','<leader>fb',function () require 'telescope'.extensions.file_browser.file_browser() end, { noremap = true })
 vim.keymap.set('n','<leader>fn',':new<CR>', { noremap = true })
-vim.keymap.set('n','<leader>fh',':Telescope oldfiles<CR>', { noremap = true })
+vim.keymap.set('n','<leader>fh',function () require("telescope.builtin").oldfiles() end, { noremap = true })
