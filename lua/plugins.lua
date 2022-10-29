@@ -12,13 +12,12 @@ return require('packer').startup(function(use)
 	use 'sainnhe/everforest'
 	use 'mfussenegger/nvim-dap'
 	use 'ryanoasis/vim-devicons'
-	--use 'vim-airline/vim-airline'
 	use 'nvim-lualine/lualine.nvim'
 	use 'Yggdroot/indentLine'
 	use 'tpope/vim-fugitive'
 	use 'junegunn/gv.vim'
 	use 'preservim/tagbar'
-	--use {'glepnir/dashboard-nvim'}
+	use {'glepnir/dashboard-nvim'}
 	use 'DanilaMihailov/beacon.nvim'
 	use {
 		'nvim-tree/nvim-tree.lua',
