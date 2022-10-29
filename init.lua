@@ -9,9 +9,12 @@ vim.g.instant_markdown_autostart=0
 vim.env.QT_QPA_PLATFORM=''
 vim.g.mkdp_browser='qutebrowser'
 vim.g.suda_smart_edit = 1
+vim.g.mapleader = "<Space>"
 
 require('plugins')
 require('lsp')
+--require('dashboard-options')
+require('telescope-options')
 require("nvim-tree").setup({
 	disable_netrw = false,
 	hijack_netrw = true,

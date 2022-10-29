@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	use 'junegunn/gv.vim'
 	use 'preservim/tagbar'
+	--use {'glepnir/dashboard-nvim'}
 	use 'DanilaMihailov/beacon.nvim'
 	use {
 		'nvim-tree/nvim-tree.lua',
@@ -40,6 +41,7 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+	use { "nvim-telescope/telescope-file-browser.nvim" }
 	use {
 		"windwp/nvim-autopairs",
 		config = function() require("nvim-autopairs").setup {} end
