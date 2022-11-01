@@ -18,12 +18,7 @@ return require('packer').startup(function(use)
 	use 'junegunn/gv.vim'
 	use 'preservim/tagbar'
 	use 'glepnir/dashboard-nvim'
-	use {
-		'Shatur/neovim-session-manager',
-		requires = {
-			'nvim-lua/plenary.nvim'
-		}
-	}
+	--use 'Shatur/neovim-session-manager'
 	use 'DanilaMihailov/beacon.nvim'
 	use {
 		'nvim-tree/nvim-tree.lua',

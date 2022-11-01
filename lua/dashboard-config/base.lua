@@ -8,7 +8,6 @@ vim.cmd([[
 
 db.hide_statusline=false
 db.hide_tabline=false
-db.session_directory=home ..'/.local/share/nvim/sessions'
 db.custom_center = {
 	{icon = '  ',
 	desc = 'New File                              ',
