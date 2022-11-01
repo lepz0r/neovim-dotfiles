@@ -17,13 +17,29 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	use 'junegunn/gv.vim'
 	use 'preservim/tagbar'
-	use {'glepnir/dashboard-nvim'}
+	use 'glepnir/dashboard-nvim'
+	use {
+		'Shatur/neovim-session-manager',
+		requires = {
+			'nvim-lua/plenary.nvim'
+		}
+	}
 	use 'DanilaMihailov/beacon.nvim'
 	use {
 		'nvim-tree/nvim-tree.lua',
 	  	requires = {
 	  	      'nvim-tree/nvim-web-devicons', -- optional, for file icons
 	  	}
+	}
+	use {
+		"folke/which-key.nvim",
+		config = function()
+		require("which-key").setup {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		}
+		end
 	}
 	use({
 		"iamcco/markdown-preview.nvim",
