@@ -8,7 +8,8 @@ vim.g.suda_smart_edit = 1
 
 require('keybindings')
 require('plugins')
-require('everforest.base')
+--require('everforest.base')
+require('dracula.base')
 require('lsp')
 require('dashboard-config.base')
 require('telescope-config.base')
