@@ -5,6 +5,9 @@ vim.g.instant_markdown_autostart=0
 vim.env.QT_QPA_PLATFORM=''
 vim.g.mkdp_browser='qutebrowser'
 vim.g.suda_smart_edit = 1
+vim.opt.mouse='a'
+vim.opt.clipboard='unnamedplus'
+vim.wo.number = true
 
 require('keybindings')
 require('plugins')
@@ -17,6 +20,7 @@ require('telescope-config.base')
 require('nvim-tree-config.base')
 require("neovide-config.base")
 require('lualine').setup()
+--require('barbar-config.base')
 
 require'colorizer'.setup({
 	'css';

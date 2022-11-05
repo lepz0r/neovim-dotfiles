@@ -4,6 +4,7 @@ local db = require('dashboard')
 --Disable Indent on dashboard
 vim.cmd([[
 	autocmd filetype dashboard IndentLinesDisable
+	autocmd filetype dashboard set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
 ]])
 
 db.hide_statusline=false
