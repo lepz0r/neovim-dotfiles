@@ -21,8 +21,8 @@ require("neovide-config.base")
 require('lualine-config.base')
 --require('barbar-config.base')
 
-require'colorizer'.setup({
-	'css';
-})
+--require'colorizer'.setup({
+--	'css';
+--})
 require('neovim-gtk-options')
 
