@@ -8,7 +8,8 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-	use 'wbthomason/packer.nvim'
+	-- Uncomment if you want Packer to manage itself
+	--use 'wbthomason/packer.nvim'
 
 	-- Color schemes
 	
@@ -22,11 +23,6 @@ return require('packer').startup(function(use)
 	use 'vim-airline/vim-airline-themes'
 	use 'Yggdroot/indentLine'
 	use 'DanilaMihailov/beacon.nvim'
-	--use 'Shatur/neovim-session-manager'
-	--use {
-	--  'romgrk/barbar.nvim',
-	--  requires = {'kyazdani42/nvim-web-devicons'}
-	--}
 
 	-- Files
 	use {
@@ -92,9 +88,5 @@ return require('packer').startup(function(use)
 	     {'rafamadriz/friendly-snippets'},
 	   }
 	 }
-
-	
-	--use 'lilydjwg/colorizer'
-
 end)
 
