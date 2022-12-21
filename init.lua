@@ -18,4 +18,5 @@ require('nvim-tree-config.base')
 require("neovide-config.base")
 require('lualine-config.base')
 require('core.gui')
-
+require('refactoring-config.base')
+require('gitsigns-config.base')

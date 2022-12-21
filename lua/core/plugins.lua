@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
 		}
 		end
 	}
+	use 'lewis6991/gitsigns.nvim'
 
 	-- Code
 	use 'norcalli/nvim-colorizer.lua'
@@ -88,5 +89,14 @@ return require('packer').startup(function(use)
 	     {'rafamadriz/friendly-snippets'},
 	   }
 	 }
+	
+	-- refactoring
+	use {
+	    "ThePrimeagen/refactoring.nvim",
+	    requires = {
+	        {"nvim-lua/plenary.nvim"},
+	        {"nvim-treesitter/nvim-treesitter"}
+	    }
+	}
 end)
 
