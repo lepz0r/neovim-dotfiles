@@ -10,7 +10,7 @@ require('core.plugins')
 
 require('markdown-preview-config.base')
 require('suda-config.base')
-require('dracula-config.base')
+require('gruvbox-config.base')
 require('lsp')
 require('dashboard-config.base')
 require('telescope-config.base')

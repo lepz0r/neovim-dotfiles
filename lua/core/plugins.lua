@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
 	-- Color schemes
 	
 	--use 'sainnhe/everforest'
-	use 'dracula/vim'
+	--use 'dracula/vim'
+	use 'ellisonleao/gruvbox.nvim'
 
 	-- UI
 	use 'nvim-lualine/lualine.nvim'
